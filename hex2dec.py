@@ -15,6 +15,21 @@ def end_program():
     """
     sys.exit()
 
+def main():
+    """
+    Main program
+    """
+    
+    while True:
+        random_base16_number = generate_random_hex()
+        base10_number = int(random_base16_number, 16)
+        answer = input(f"What is the decimal value of 0x{random_base16_number}? ")
+        if answer == 'q':
+            end_program()
+        elif int(answer) == base10_number:
+            print("Correct!")
+        else:
+            answer = input("Incorrect. Try again ")
 
-
-print(generate_random_hex(2))
+if __name__ == '__main__':
+    main()
