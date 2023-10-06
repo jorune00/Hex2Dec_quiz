@@ -23,20 +23,23 @@ def main():
     while True:
         random_base16_number = generate_random_hex()
         correct_base10_number = int(random_base16_number, 16)
+        is_correct = False
         
-        try:
-            answer = input(f"What is the decimal value of 0x{random_base16_number}? ")
-            if answer.lower() == 'q':
-                end_program()
-            
-            answer = int(answer)
-            if answer == correct_base10_number:
-                print("Correct!")
-                continue  # go to next iteration
-            else:
-                print("Incorrect. Try again or press 'q' to quit.")
-        except ValueError:
-            print("Invalid input. Please enter a number or 'q' to quit.")
+        while not is_correct:
+            try:
+                answer = input(f"What is the decimal value of 0x{random_base16_number}? ")
+                if answer.lower() == 'q':
+                    end_program()
+                
+                answer = int(answer)
+                if answer == correct_base10_number:
+                    print("Correct!")
+                    is_correct = True
+                    continue  # go to next iteration
+                else:
+                    print("Incorrect. Try again or press 'q' to quit.")
+            except ValueError:
+                print("Invalid input. Please enter a number or 'q' to quit.")
 
 if __name__ == '__main__':
     main()
