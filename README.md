@@ -1,7 +1,7 @@
 # Hex to Decimal Quiz
 
 ## Description
-A simple Python program that generates a random hexadecimal number and prompts the user to convert it to its decimal equivalent. I wrote this because David Bombal free quiz was taken down on or around 10/5/2023
+A simple Python program that generates a random hexadecimal number and prompts the user to convert it to its decimal equivalent. I wrote this because David Bombal's free quiz was taken down from his website on or around 10/5/2023
 
 ## Requirements
 - Python 3.x
