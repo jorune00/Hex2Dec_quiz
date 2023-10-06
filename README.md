@@ -8,8 +8,9 @@ A simple Python program that generates a random hexadecimal number and prompts t
 
 ## Usage
 Run the program in a terminal:
-```bash
+\```bash
 python hex2dec.py
+\```
 
 ## Features
 Generates a random hexadecimal number.
@@ -18,7 +19,7 @@ Provides feedback on whether the guess is correct or incorrect.
 Option to quit the program by entering 'q'.
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome. 
 
 ## Author
 - jorune00
